@@ -2,7 +2,7 @@
 
 /* Form Container */
 .form-container {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
   background: #fff;
@@ -30,12 +30,13 @@
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   border-radius: 4px;
   resize: vertical;
   background: #f9f9f9;
   transition: border-color 0.3s;
   box-sizing:border-box;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .form-group textarea:focus,
@@ -110,34 +111,6 @@
   }
 }
 
-/* General form styles */
-.form-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-  margin-bottom: 16px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-
-textarea, select, input[type="file"] {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
 .submit-button {
   display: inline-flex;
   align-items: center;
@@ -159,7 +132,7 @@ textarea, select, input[type="file"] {
 .result-container {
   margin-top: 20px;
   padding: 15px;
-  background-color: #fff;
+  background-color: #cfcfc0;
   border: 1px solid #ddd;
   border-radius: 4px;
 }

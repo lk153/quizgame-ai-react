@@ -35,7 +35,7 @@ function IELTSWritingForm() {
     setAssessmentDetails('');
 
     try {
-      const response = await fetch('http://10.4.0.212:8111/v1/task-result/assess', {
+      const response = await fetch('http://10.2.0.9:8111/v1/task-result/assess', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ function IELTSWritingForm() {
           name="candidateText"
           value={formData.candidateText}
           onChange={handleChange}
-          rows="5"
+          rows="20"
           required
         />
       </div>
