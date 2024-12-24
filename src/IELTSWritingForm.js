@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import './IELTSWritingForm.css';
 
+const API_URL = process.env.REACT_APP_API_URL;
 function IELTSWritingForm() {
   const [formData, setFormData] = useState({
     writingTaskType: 1, // Using number type for writingTaskType
@@ -35,7 +36,7 @@ function IELTSWritingForm() {
     setAssessmentDetails('');
 
     try {
-      const response = await fetch('http://10.2.0.9:8111/v1/task-result/assess', {
+      const response = await fetch(API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
